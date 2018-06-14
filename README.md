@@ -1,2 +1,18 @@
 # Lyrical-GraphQL
-Starter project from a GraphQL course on Udemy.com
+
+### Mutation
+
+```
+mutation AddSong($title: String) {
+  addSong(title: $title) {
+    id
+    title
+  }
+}
+
+mutation deleteSong($id: ID) {
+  deleteSong(id: $id) {
+    id
+  }
+}
+```
